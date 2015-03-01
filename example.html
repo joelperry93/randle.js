@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Randle example</title>
+    </head>
+    <body>
+        <script src="Randle.js"></script>
+        <script>
+            setInterval(function () {
+                document.body.innerHTML = "";
+
+                for (var i = 0; i < Randle.number(20, 50); i++) {
+                    var div = document.createElement('div');
+                    div.innerHTML = Randle.string(i);
+                    document.body.appendChild(div);
+                }
+            }, 1000);
+        </script>
+    </body>
+</html>
